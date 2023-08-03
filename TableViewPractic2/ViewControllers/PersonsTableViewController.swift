@@ -8,7 +8,6 @@
 import UIKit
 
 final class PersonsTableViewController: UITableViewController {
-    
     var persons: [Person]!
 }
 

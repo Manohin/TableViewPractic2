@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
+final class DetailViewController: UIViewController {
     
     @IBOutlet var phoneNumberLabel: UILabel!
     @IBOutlet var emailLabel: UILabel!
@@ -19,6 +19,5 @@ class DetailViewController: UIViewController {
         title = person.fullName
         emailLabel.text = "E-mail: \(person.email)"
         phoneNumberLabel.text = "Phone number: \(person.phoneNumber)"
-        
     }
 }
