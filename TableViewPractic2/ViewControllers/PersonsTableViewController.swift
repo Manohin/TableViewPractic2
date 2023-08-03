@@ -1,5 +1,5 @@
 //
-//  MainTableViewController.swift
+//  PersonsTableViewController.swift
 //  TableViewPractic2
 //
 //  Created by Alexey Manokhin on 03.08.2023.
@@ -7,13 +7,12 @@
 
 import UIKit
 
-final class MainTableViewController: UITableViewController {
+final class PersonsTableViewController: UITableViewController {
     
     var persons: [Person]!
-    
 }
 
-extension MainTableViewController {
+extension PersonsTableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let detailVC = segue.destination as? DetailViewController else { return }
         let indexPath = tableView.indexPathForSelectedRow

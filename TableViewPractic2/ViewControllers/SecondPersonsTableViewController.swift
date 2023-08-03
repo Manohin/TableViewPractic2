@@ -1,5 +1,5 @@
 //
-//  PersonsSecondTableViewController.swift
+//  SecondPersonsTableViewController.swift
 //  TableViewPractic2
 //
 //  Created by Alexey Manokhin on 03.08.2023.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class PersonsSecondTableViewController: UITableViewController {
+final class SecondPersonsTableViewController: UITableViewController {
     
     var persons: [Person]!
     
@@ -19,7 +19,7 @@ final class PersonsSecondTableViewController: UITableViewController {
 
 // MARK: - Table view data source
 
-extension PersonsSecondTableViewController {
+extension SecondPersonsTableViewController {
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         persons.count

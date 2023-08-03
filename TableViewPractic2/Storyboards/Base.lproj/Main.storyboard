@@ -11,7 +11,7 @@
         <!--PersonS-->
         <scene sceneID="dWt-7G-pgR">
             <objects>
-                <tableViewController id="wRC-az-wwB" customClass="PersonsSecondTableViewController" customModule="TableViewPractic2" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="wRC-az-wwB" customClass="SecondPersonsTableViewController" customModule="TableViewPractic2" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="0en-WB-SNW">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -41,7 +41,7 @@
         <!--Persons List-->
         <scene sceneID="bzZ-Sn-HLt">
             <objects>
-                <tableViewController id="N4h-3w-Ope" customClass="MainTableViewController" customModule="TableViewPractic2" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="N4h-3w-Ope" customClass="PersonsTableViewController" customModule="TableViewPractic2" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="KVg-Vm-DSK">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

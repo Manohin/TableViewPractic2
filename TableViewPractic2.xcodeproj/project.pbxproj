@@ -14,9 +14,9 @@
 		8A34BE812A7C25740019EE66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A34BE7F2A7C25740019EE66 /* LaunchScreen.storyboard */; };
 		8A34BE8F2A7C26C10019EE66 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A34BE8E2A7C26C10019EE66 /* Person.swift */; };
 		8A34BE912A7C27020019EE66 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A34BE902A7C27020019EE66 /* DataStore.swift */; };
-		8A34BE9C2A7C395C0019EE66 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A34BE9B2A7C395C0019EE66 /* MainTableViewController.swift */; };
+		8A34BE9C2A7C395C0019EE66 /* PersonsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A34BE9B2A7C395C0019EE66 /* PersonsTableViewController.swift */; };
 		8A34BE9E2A7C3B570019EE66 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A34BE9D2A7C3B570019EE66 /* DetailViewController.swift */; };
-		8A34BEA02A7C42170019EE66 /* PersonsSecondTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A34BE9F2A7C42170019EE66 /* PersonsSecondTableViewController.swift */; };
+		8A34BEA02A7C42170019EE66 /* SecondPersonsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A34BE9F2A7C42170019EE66 /* SecondPersonsTableViewController.swift */; };
 		8A34BEA22A7C469C0019EE66 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A34BEA12A7C469C0019EE66 /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,9 +30,9 @@
 		8A34BE822A7C25740019EE66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A34BE8E2A7C26C10019EE66 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		8A34BE902A7C27020019EE66 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
-		8A34BE9B2A7C395C0019EE66 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		8A34BE9B2A7C395C0019EE66 /* PersonsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsTableViewController.swift; sourceTree = "<group>"; };
 		8A34BE9D2A7C3B570019EE66 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		8A34BE9F2A7C42170019EE66 /* PersonsSecondTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsSecondTableViewController.swift; sourceTree = "<group>"; };
+		8A34BE9F2A7C42170019EE66 /* SecondPersonsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPersonsTableViewController.swift; sourceTree = "<group>"; };
 		8A34BEA12A7C469C0019EE66 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,9 +96,9 @@
 		8A34BE942A7C27450019EE66 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				8A34BE9B2A7C395C0019EE66 /* MainTableViewController.swift */,
+				8A34BE9B2A7C395C0019EE66 /* PersonsTableViewController.swift */,
 				8A34BE9D2A7C3B570019EE66 /* DetailViewController.swift */,
-				8A34BE9F2A7C42170019EE66 /* PersonsSecondTableViewController.swift */,
+				8A34BE9F2A7C42170019EE66 /* SecondPersonsTableViewController.swift */,
 				8A34BEA12A7C469C0019EE66 /* TabBarController.swift */,
 			);
 			path = ViewControllers;
@@ -197,8 +197,8 @@
 				8A34BE912A7C27020019EE66 /* DataStore.swift in Sources */,
 				8A34BE752A7C25710019EE66 /* AppDelegate.swift in Sources */,
 				8A34BE9E2A7C3B570019EE66 /* DetailViewController.swift in Sources */,
-				8A34BEA02A7C42170019EE66 /* PersonsSecondTableViewController.swift in Sources */,
-				8A34BE9C2A7C395C0019EE66 /* MainTableViewController.swift in Sources */,
+				8A34BEA02A7C42170019EE66 /* SecondPersonsTableViewController.swift in Sources */,
+				8A34BE9C2A7C395C0019EE66 /* PersonsTableViewController.swift in Sources */,
 				8A34BEA22A7C469C0019EE66 /* TabBarController.swift in Sources */,
 				8A34BE772A7C25710019EE66 /* SceneDelegate.swift in Sources */,
 			);

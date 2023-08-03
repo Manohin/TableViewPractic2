@@ -7,23 +7,19 @@
 
 import UIKit
 
-class TabBarController: UITabBarController {
+final class TabBarController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        get(persons: Person.getPersons())
+        setupViewController()
     }
-}
-
-
-extension TabBarController {
-    private func get(persons: [Person]) {
-        guard let mainVC = viewControllers?.first as? MainTableViewController else { return }
+    
+    private func setupViewController() {
+        guard let mainVC = viewControllers?.first as? PersonsTableViewController else { return }
+        guard let secondListVC = viewControllers?.last as? SecondPersonsTableViewController else { return }
+        
+        let persons = Person.getPersons()
         mainVC.persons = persons
-        
-        
-        guard let secondListVC = viewControllers?.last as? PersonsSecondTableViewController else { return }
         secondListVC.persons = persons
     }
 }
