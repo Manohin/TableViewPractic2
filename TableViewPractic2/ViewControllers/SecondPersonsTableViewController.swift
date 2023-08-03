@@ -35,15 +35,14 @@ extension SecondPersonsTableViewController {
         var content = cell.defaultContentConfiguration()
         let person = persons[indexPath.section]
         
-        
-        if indexPath.row == 0 {
+        switch indexPath.row {
+        case 0:
             content.text = "Телефон: " + person.phoneNumber
-            content.image = UIImage(systemName: "phone")
-        } else {
+            content.image = UIImage(systemName: Contacts.phone.rawValue)
+        default:
             content.text = "Email: " + person.email
-            content.image = UIImage(systemName: "mail")
+            content.image = UIImage(systemName: Contacts.mail.rawValue)
         }
-        
         
         cell.contentConfiguration = content
         return cell
