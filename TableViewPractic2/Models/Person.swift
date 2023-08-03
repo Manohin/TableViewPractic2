@@ -11,6 +11,9 @@ struct Person {
     let phoneNumber: String
     let email: String
     
+    var rows: [String] {
+        [phoneNumber, email]
+    }
     var fullName: String {
         "\(name) \(surname)"
     }

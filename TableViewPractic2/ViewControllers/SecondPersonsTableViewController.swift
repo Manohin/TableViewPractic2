@@ -10,6 +10,7 @@ import UIKit
 final class SecondPersonsTableViewController: UITableViewController {
     
     var persons: [Person]!
+    let numberOfRowsInSection = 2
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +27,7 @@ extension SecondPersonsTableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        2
+        persons[section].rows.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -34,23 +35,22 @@ extension SecondPersonsTableViewController {
         var content = cell.defaultContentConfiguration()
         let person = persons[indexPath.section]
         
-        switch indexPath.row {
-        case 0:
+        
+        if indexPath.row == 0 {
             content.text = "Телефон: " + person.phoneNumber
             content.image = UIImage(systemName: "phone")
-        default:
+        } else {
             content.text = "Email: " + person.email
             content.image = UIImage(systemName: "mail")
         }
+        
         
         cell.contentConfiguration = content
         return cell
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        let person = persons[section].fullName
-        
-        return person
+        persons[section].fullName
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
