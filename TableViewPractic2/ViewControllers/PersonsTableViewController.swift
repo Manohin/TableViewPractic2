@@ -9,7 +9,30 @@ import UIKit
 
 final class PersonsTableViewController: UITableViewController {
     var persons: [Person]!
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        tabBarItem.image = UIImage(systemName: "person.fill")
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        tabBarItem.image = UIImage(systemName: "person")
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        let alert = UIAlertController(title: "Привет!", message: "Добро пожаловать!", preferredStyle: .alert)
+        let action = UIAlertAction(title: "Ok", style: .cancel)
+        alert.addAction(action)
+        present(alert, animated: true)
+    }
+    
 }
+
+
+
 
 extension PersonsTableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

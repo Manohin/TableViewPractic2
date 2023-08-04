@@ -12,9 +12,15 @@ final class SecondPersonsTableViewController: UITableViewController {
     var persons: [Person]!
     let numberOfRowsInSection = 2
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
         tabBarItem.image = UIImage(systemName: "person.fill")
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        tabBarItem.image = UIImage(systemName: "person")
     }
 }
 
@@ -54,5 +60,9 @@ extension SecondPersonsTableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        20
     }
 }
